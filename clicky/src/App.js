@@ -1,22 +1,51 @@
 import React, { Component } from "react";
 import Wrapper from "./components/Wrapper";
+import Navbar from "./components/Navbar";
 import Title from "./components/Title";
 import CharacterCard from "./components/CharacterCard";
+import cards from "./cards.json";
 import "./App.css";
 
 class App extends Component {
   state = {
-    // images
+    message: "Make a Guess",
+    cards,
+    score: 0
+
   };
+
+  handleClick = (index) => {
+    //add to the total score
+    const newScore = this.state.score + 1;
+
+    const card = this.state.cards[index];
+    card.clicks++;
+
+    var cardsWithoutClickedCard = this.state.cards.slice(0, index).concat(this.state.cards.slice(index + 1))
+    var newCards = [...cardsWithoutClickedCard, card]
+    // add to the clicks of the id card
+    //reorder the cards by clicks
+    this.setState({
+      score: newScore,
+      cards: newCards
+    })
+  }
+
+  sortByClicks(card1, card2) {
+    return (card2.clicks < card1.clicks)
+  }
 
   // render a character card compoent for each character
   render() {
     return (
       <Wrapper>
-        <Title>Clicky Game </Title>
-        <CharacterCard>
-          {/* //each image should map over the cards and change position upon being clicked */}
-        </CharacterCard>
+        <Navbar message={this.state.message} />
+        <Title>Clicky Game</Title>
+
+        {this.state.cards.sort(this.sortByClicks).map((card, index) => <CharacterCard name={card.name} image={card.url} key={card.id} index={index} handleClick={this.handleClick} />)}
+
+
+
       </Wrapper>
     )
   }

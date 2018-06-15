@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "url": "images/brian.jpg",
+        "name": "brian",
+        "clicks": 0
+    },
+    {
+        "id": 2,
+        "url": "images/peter.jpg",
+        "name": "peter",
+        "clicks": 0
+    },
+    {
+        "id": 3,
+        "url": "images/lois.jpg",
+        "name": "lois",
+        "clicks": 0
+    },
+    {
+        "id": 4,
+        "url": "images/meg.jpg",
+        "name": "meg",
+        "clicks": 0
+    },
+    {
+        "id": 5,
+        "url": "images/cleveland.jpg",
+        "name": "cleveland",
+        "clicks": 0
+    },
+    {
+        "id": 6,
+        "url": "images/joe.jpg",
+        "name": "joe",
+        "clicks": 0
+    },
+    {
+        "id": 7,
+        "url": "images/chris.jpg",
+        "name": "chris",
+        "clicks": 0
+    },
+    {
+        "id": 8,
+        "url": "images/stewie.jpg",
+        "name": "stewie",
+        "clicks": 0
+    }
+]
