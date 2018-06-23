@@ -4,20 +4,16 @@ import Guess from "../Guess/Guess";
 import Score from "../Score/Score";
 
 const Navbar = props => (
-    <nav className="nav navbar">
+    <nav>
         <ul>
-            <li>
-                Clicky Game
-            </li>
-            <li>
+            <li id="message" style={{ color: props.textColor }}>
                 <Guess message={props.message}></Guess>
             </li>
-            <li>
-                <Score />
+            <li id="score">
+                <Score score={props.score} topScore={props.topScore} />
             </li>
         </ul>
     </nav>
-
 );
 
 export default Navbar;

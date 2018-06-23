@@ -1,0 +1,58 @@
+nav {
+    width: 100%;
+    font-size: 2rem;
+    color: #fff;
+    /* margin-bottom: 50px; */
+    background-color: rgb(252, 250, 250);
+    background-image: url(http://homepage.tinet.ie/~lol/familyguy/familyguy.gif);
+    background-repeat:no-repeat !important;
+    height: auto;
+   float: right !important;
+   
+  }
+  
+  a {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color: rgb(62, 228, 253);
+  }
+  
+  nav li {
+    display: inline-block;
+    padding: 26px 0;
+    width: 35%;
+    /* text-align: center; */
+  }
+  
+  ul {
+    /* padding-left: 0px; */
+    display: flex;
+    align-items: center;
+  }
+  
+  @media only screen and (max-width: 750px) {
+    #cur-sco,
+    #top-sco {
+      font-size: 2rem;
+    }
+  }
+  
+  #message {
+    color: rgb(32, 139, 233);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+    align-content: center;
+    margin-left: 600px;
+    font-size: 25px;
+  }
+  #score {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+   font-size: 10px !important;
+    margin-left: 50px;
+   
+  }

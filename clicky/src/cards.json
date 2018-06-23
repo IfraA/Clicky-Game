@@ -46,5 +46,29 @@
         "url": "images/stewie.jpg",
         "name": "stewie",
         "clicks": 0
+    },
+    {
+        "id": 9,
+        "url": "images/quagmire.jpg",
+        "name": "stewie",
+        "clicks": 0
+    },
+    {
+        "id": 10,
+        "url": "images/dad.png",
+        "name": "stewie",
+        "clicks": 0
+    },
+    {
+        "id": 11,
+        "url": "images/mayor.png",
+        "name": "stewie",
+        "clicks": 0
+    },
+    {
+        "id": 12,
+        "url": "images/trica.jpg",
+        "name": "stewie",
+        "clicks": 0
     }
 ]

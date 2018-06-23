@@ -1,9 +1,12 @@
 import React from "react";
+import "./score.css";
 // import "./Title.css";
 
 const Score = props => (
-    <h1 className="title">{props.children}</h1>
+    <div>
+        <h1 div="score">Score : {props.score}    ||    Top Score : {props.topScore}</h1>
 
+    </div>
 );
 
 export default Score;
